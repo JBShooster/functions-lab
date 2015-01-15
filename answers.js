@@ -62,3 +62,24 @@ var multiplyArray = function(numbers){
 
 //Answer should be 120
 multiplyArray(numbers);
+
+//Bonus 1: Reverse String
+function reverse(myString){
+    return myString.split("").reverse().join("");
+};
+
+reverse("OPRAH");
+
+//Bonus 2: findLongestWord
+words = ["One", "two", "three", "four", "fifteen"];
+
+var findLongestWord = function (words){
+    for(i = 0, longest = 0; i < words.length; i++){
+        if (words[i].length > longest)  {
+            longest = words[i].length;
+            }
+    };
+    console.log(longest);
+};
+
+findLongestWord(words);
